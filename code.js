@@ -55,6 +55,7 @@ $(document).ready(function(){
     }
     else if(this.id=="="){
       obtenerTotal();
+      updateString();
     }
     else{
       getValue(this.id);
