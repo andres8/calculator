@@ -1,0 +1,70 @@
+body{
+  background-color: #9e9e9eba;
+}
+button:focus { outline:0 !important; }
+.calculatorBack{
+  height: 415px;
+  width: 300px;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #dfd8d0;
+  border-radius: 8%;
+  border: 2px solid #dfd8d0;
+  box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
+  font-family: 'Orbitron', sans-serif;
+}
+.display{
+  height: 60px;
+  background-color: #c3c2ab;
+  border: 2px solid;
+  border-color: #c3c2ab;
+  margin: 1.3rem;
+  border-radius: 7px;
+  font-size: 1.6rem;
+}
+.output{
+  padding-right: 7px;
+}
+.buttons{
+  margin: 1rem;
+}
+.redBotoncito{
+  margin: .38rem;
+  height: 40px;
+  width: 50px;
+  background-color: #a72d45;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  box-shadow: 1px 1px #888888;
+  border-color: #a72d45;
+}
+.redBotoncito:active {
+  background-color: #a72d45;
+  box-shadow: 0 2px #a72d45;
+  transform: translateY(3px);
+}
+.blackBotoncito {
+    margin: .38rem;
+    height: 40px;
+    width: 50px;
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    box-shadow: 1px 1px #888888;
+    border-color: #000000;
+}
+.blackBotoncito:active {
+  background-color: black;
+  box-shadow: 0 2px black;
+  transform: translateY(3px);
+}
+.igual{
+  height: 90px;
+  position: absolute;
+}
+.cero{
+  width: 117px;
+}
