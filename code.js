@@ -29,8 +29,8 @@ $(document).ready(function(){
       inputs.push(valor);
     }
     updateString();
-    console.log(inputs.length);
-    console.log(regex.test(total));
+    //console.log(inputs.length);
+    //console.log(regex.test(total));
   }
   function updateString(){
     total = inputs.join("").substring(0,10);
@@ -38,24 +38,27 @@ $(document).ready(function(){
     $('#display').html(total);
   }
   function obtenerTotal(){
-
+    if(inputs.length>0){
     total = eval(inputs.join("")).toString().substring(0,11);
     $('#display').html(total);
-    console.log(total2);
     inputs=[];
+    }
   }
   $("button").on("click", function(){
     if(this.id=="ac"){
       inputs=[];
       updateString();
+      $('#display').html("0");
     }
     else if(this.id=="ce"){
       inputs.pop();
       updateString();
+      if(inputs.length===0){
+        $('#display').html("0");
+      }
     }
     else if(this.id=="="){
       obtenerTotal();
-      updateString();
     }
     else{
       getValue(this.id);
