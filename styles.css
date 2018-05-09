@@ -5,7 +5,7 @@ button:focus { outline:0 !important; }
 .calculatorBack{
   height: 415px;
   width: 300px;
-  margin-top: 15%;
+  margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
   background-color: #dfd8d0;
